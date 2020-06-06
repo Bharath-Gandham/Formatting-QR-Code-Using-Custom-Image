@@ -5,7 +5,7 @@ def main():
     image = cv2.imread("whiteandblack.jpeg")##Your QR Code
     image2=cv2.imread("image2.jpg")##Your custom Image
     blank_image=imageRelated(image,image2)
-    cv2.imshow("Image3",blank_image)
+    cv2.imshow("NewQRCode-Output",blank_image)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 def imageRelated(image, image2):
@@ -30,8 +30,8 @@ def imageRelated(image, image2):
                 blank_image[i,j] = resized[i,j]##here you can do minus
             
             
-    cv2.imshow("Image",image)
-    cv2.imshow("Image2",resized)
+    cv2.imshow("QRCode-Input1",image)
+    cv2.imshow("Resized-Input2",resized)
     return blank_image
     #cv2.imshow("Image3",blank_image)
     cv2.waitKey(0)
