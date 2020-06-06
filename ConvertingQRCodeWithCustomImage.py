@@ -2,8 +2,8 @@ import cv2
 import numpy as np
 def main():
     
-    image = cv2.imread("whiteandblack.jpeg")##Your QR Code
-    image2=cv2.imread("image2.jpg")##Your custom Image
+    image = cv2.imread("Input1-QR_Code.jpeg")##Your QR Code
+    image2=cv2.imread("Input2-Any_Sized_Image.jpg")##Your custom Image
     blank_image=imageRelated(image,image2)
     cv2.imshow("NewQRCode-Output",blank_image)
     cv2.waitKey(0)
